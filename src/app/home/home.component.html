@@ -1,0 +1,12 @@
+<div *ngIf="settings">
+  <h1>Saved Settings</h1><br/>
+
+  <b>Email Address :</b> {{settings.email}}<br/> <b>Color : </b>{{settings.color}}<br/><b> Country : </b>{{settings.country}}<br/>
+  <b>Technologies learnt : </b>
+  <div *ngFor="let t of technology">
+    - {{t}}
+  </div>
+</div>
+<div *ngIf="!settings">
+  <h3>No saved settings found !</h3>
+</div>

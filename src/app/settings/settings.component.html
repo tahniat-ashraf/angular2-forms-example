@@ -1,0 +1,62 @@
+
+<br/>
+<form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" formControlName="email" required>
+  </div>
+  <b>Technologies you know</b>
+  <span class="checkbox">
+    <label for="android">
+      <input type="checkbox" id="android" formControlName="android"> android
+    </label>
+  </span>
+  <span class="checkbox">
+    <label for="angular">
+      <input type="checkbox" id="angular" formControlName="angular"> angular 2
+    </label>
+  </span>
+  <span class="checkbox">
+    <label for="java">
+      <input type="checkbox" id="java" formControlName="java"> java
+    </label>
+  </span>
+  <span class="checkbox">
+    <label for="kotlin">
+      <input type="checkbox" id="kotlin" formControlName="kotlin"> kotlin
+    </label>
+  </span>
+  <span class="checkbox">
+    <label for="ionic">
+      <input type="checkbox" id="ionic" formControlName="ionic"> ionic 2
+    </label>
+  </span>
+  <b> Your Favorite Color</b>
+  <div class="radio" >
+    <label>
+    <input type="radio" name="color" id="optionsRadios1" value="blue" formControlName="color" required>
+    Blue
+  </label>
+  </div>
+  <div class="radio">
+    <label>
+    <input type="radio" name="color" id="optionsRadios2" value="red" formControlName="color" required>
+    Red
+  </label>
+  </div>
+  <div class="radio">
+    <label>
+    <input type="radio" name="color" id="optionsRadios3" value="green" formControlName="color" required>
+    Green
+  </label>
+  </div>
+  <b>Your Country</b>
+  <select class="form-control" formControlName="country" required>
+  <option>Argentina</option>
+  <option>Brazil</option>
+  <option>India</option>
+  <option>Bangladesh</option>
+  <option>Egypt</option>
+</select><br/>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
